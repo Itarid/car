@@ -6,10 +6,11 @@ def main(filepath, column):
   indexer.load ("./")
 
   for line in lines:
-    print
+    print('some text')
     line
     elems = line.split ("\t")
     indexer.append (''.join (elems[column - 1]))
+    print(lines)
 
 if __name__ == "__main__":
   if len(sys.argv) < 3:
