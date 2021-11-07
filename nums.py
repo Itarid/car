@@ -14,7 +14,7 @@ def main(filepath, column):
     print(lines)
 
 if __name__ == "__main__":
-  if len(sys.argv) < 5:
+  if len(sys.argv) < 6:
     print "usage: ./indexer_update.py UPDATE_TSV_FILE_PATH TARGET_COLUMN_NUM"
     sys.exit(1)
 
