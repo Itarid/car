@@ -7,13 +7,14 @@ def main(filepath, column):
 
   for line in lines:
     print('some text')
-    line
+    print(line)
+    print('another change')
     elems = line.split ("\t")
     indexer.append (''.join (elems[column - 1]))
     print(lines)
 
 if __name__ == "__main__":
-  if len(sys.argv) < 3:
+  if len(sys.argv) < 4:
     print "usage: ./indexer_update.py UPDATE_TSV_FILE_PATH TARGET_COLUMN_NUM"
     sys.exit(1)
 
